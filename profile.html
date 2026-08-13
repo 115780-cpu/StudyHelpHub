@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile | Study Help Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+    <div class="logo-section">
+
+        <img
+            src="Logo.png"
+            alt="Study Help Hub Logo"
+            class="logo"
+        >
+
+        <h2>Study Help Hub</h2>
+
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="index.html">
+                <img src="home.png" alt="Home">
+                <span>Home</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="math.html">
+                <img src="Math icon.png" alt="Mathematics">
+                <span>Mathematics</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="science.html">
+                <img src="Science icon.png" alt="Science">
+                <span>Science</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="english.html">
+                <img src="English icon.png" alt="English">
+                <span>English</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="history.html">
+                <img src="History icon.png" alt="History">
+                <span>History</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="ask-question.html">
+                <img src="ask-for-help.png" alt="Ask Question">
+                <span>Ask Question</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="my-questions.html">
+                <img src="My question.png" alt="My Questions">
+                <span>My Questions</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="bookmarks.html">
+                <img src="bookmark.png" alt="Bookmarks">
+                <span>Bookmarks</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="settings.html">
+                <img src="settings.png" alt="Settings">
+                <span>Settings</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="help.html">
+                <img src="help-desk.png" alt="Help">
+                <span>Help & Support</span>
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<!-- Main Content -->
+
+<div class="main-content">
+
+    <!-- Top Bar -->
+
+    <div class="topbar">
+
+        <input
+            type="text"
+            placeholder="Search..."
+        >
+
+        <a href="profile.html">
+
+            <img
+                src="Profile icon.png"
+                alt="Profile"
+                class="profile"
+            >
+
+        </a>
+
+    </div>
+
+
+    <!-- Profile -->
+
+    <div class="welcome-text">
+
+        <h1>👤 My Profile</h1>
+
+        <p>
+            Welcome to your Study Help Hub profile.
+            Manage your learning information and preferences here.
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>👤 Profile Information</h3>
+
+        <br>
+
+        <label>
+            <strong>Name</strong>
+        </label>
+
+        <br><br>
+
+        <input
+            type="text"
+            id="profileName"
+            placeholder="Enter your name"
+            style="width:100%; padding:12px; border:1px solid #ccc; border-radius:8px;"
+        >
+
+        <br><br>
+
+        <label>
+            <strong>Favourite Subject</strong>
+        </label>
+
+        <br><br>
+
+        <select
+            id="profileSubject"
+            style="width:100%; padding:12px; border:1px solid #ccc; border-radius:8px;"
+        >
+
+            <option>Mathematics</option>
+            <option>Science</option>
+            <option>English</option>
+            <option>History</option>
+            <option>Other</option>
+
+        </select>
+
+        <br><br>
+
+        <button
+            class="show-btn"
+            onclick="saveProfile()"
+        >
+            Save Profile
+        </button>
+
+        <p
+            id="profileMessage"
+            style="margin-top:15px;"
+        ></p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>📚 My Learning</h3>
+
+        <p>
+            Use the Mathematics, Science, English and History
+            sections to explore learning resources and practise
+            different topics.
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>🔖 My Saved Resources</h3>
+
+        <p>
+            View your saved learning resources in the
+            Bookmarks section.
+        </p>
+
+        <br>
+
+        <a href="bookmarks.html">
+
+            <button class="show-btn">
+                View Bookmarks
+            </button>
+
+        </a>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>⚙️ Account Settings</h3>
+
+        <p>
+            Change your preferences, notifications,
+            appearance and privacy settings.
+        </p>
+
+        <br>
+
+        <a href="settings.html">
+
+            <button class="show-btn">
+                Open Settings
+            </button>
+
+        </a>
+
+    </div>
+
+</div>
+
+
+<script>
+
+function saveProfile() {
+
+    var name =
+        document.getElementById("profileName").value;
+
+    var subject =
+        document.getElementById("profileSubject").value;
+
+
+    if (name.trim() === "") {
+
+        document.getElementById("profileMessage").innerHTML =
+            "Please enter your name.";
+
+        return;
+
+    }
+
+
+    localStorage.setItem("studyName", name);
+
+    localStorage.setItem("studySubject", subject);
+
+
+    document.getElementById("profileMessage").innerHTML =
+        "✅ Profile saved successfully.";
+
+}
+
+
+window.onload = function() {
+
+    var savedName =
+        localStorage.getItem("studyName");
+
+    var savedSubject =
+        localStorage.getItem("studySubject");
+
+
+    if (savedName) {
+
+        document.getElementById("profileName").value =
+            savedName;
+
+    }
+
+
+    if (savedSubject) {
+
+        document.getElementById("profileSubject").value =
+            savedSubject;
+
+    }
+
+};
+
+</script>
+
+</body>
+
+</html>

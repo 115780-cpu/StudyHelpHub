@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biology | Study Help Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+<div class="logo-section">
+<img src="Logo.png" class="logo" alt="Logo">
+<h2>Study Help Hub</h2>
+</div>
+<ul>
+<li><a href="index.html"><img src="home.png"><span>Home</span></a></li>
+<li><a href="math.html"><img src="Math icon.png"><span>Mathematics</span></a></li>
+<li><a href="science.html"><img src="Science icon.png"><span>Science</span></a></li>
+<li><a href="english.html"><img src="English icon.png"><span>English</span></a></li>
+<li><a href="history.html"><img src="History icon.png"><span>History</span></a></li>
+<li><a href="ask-question.html"><img src="ask-for-help.png"><span>Ask Question</span></a></li>
+<li><a href="my-questions.html"><img src="My question.png"><span>My Questions</span></a></li>
+<li><a href="bookmarks.html"><img src="bookmark.png"><span>Bookmarks</span></a></li>
+<li><a href="settings.html"><img src="settings.png"><span>Settings</span></a></li>
+<li><a href="help.html"><img src="help-desk.png"><span>Help & Support</span></a></li>
+</ul>
+</div>
+
+<div class="main-content">
+<div class="topbar">
+<input type="text" placeholder="Search Biology...">
+<img src="Profile icon.png" class="profile">
+</div>
+
+<div class="welcome-text">
+<h1>🧬 Biology</h1>
+<p>Biology is the study of living organisms and life processes. Learn about cells, genetics, ecosystems, plants, animals and the human body.</p>
+</div>
+
+<div class="card">
+<h3>📚 What You'll Learn</h3>
+<ul>
+<li>Cells and Cell Structure</li>
+<li>Human Body Systems</li>
+<li>Genetics and DNA</li>
+<li>Photosynthesis</li>
+<li>Evolution</li>
+<li>Ecosystems and Food Chains</li>
+<li>Classification of Living Things</li>
+<li>Microorganisms</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>💡 Study Tip</h3>
+<p>Draw labelled diagrams of cells, organs and food chains. Visual learning makes biology much easier to remember.</p>
+</div>
+
+<div class="card">
+<h3>📝 Example Question 1</h3>
+<p><strong>Question:</strong></p>
+<p>What is the basic unit of life?</p>
+<button class="show-btn" onclick="showAnswer('a1',this)">Show Answer</button>
+<div id="a1" class="answer">
+<p><strong>Answer</strong></p>
+<p>The cell is the basic unit of life.</p>
+</div>
+</div>
+
+<div class="card">
+<h3>📝 Example Question 2</h3>
+<p><strong>Question:</strong></p>
+<p>Which organ pumps blood around the body?</p>
+<button class="show-btn" onclick="showAnswer('a2',this)">Show Answer</button>
+<div id="a2" class="answer">
+<p><strong>Answer</strong></p>
+<p>The heart pumps blood around the body.</p>
+</div>
+</div>
+
+<div class="card">
+<h3>📝 Example Question 3</h3>
+<p><strong>Question:</strong></p>
+<p>Which process allows plants to make food?</p>
+<button class="show-btn" onclick="showAnswer('a3',this)">Show Answer</button>
+<div id="a3" class="answer">
+<p><strong>Answer</strong></p>
+<p>Photosynthesis allows plants to make food using sunlight, water and carbon dioxide.</p>
+</div>
+</div>
+
+<div class="card">
+<h3>📝 Example Question 4</h3>
+<p><strong>Question:</strong></p>
+<p>What carries genetic information?</p>
+<button class="show-btn" onclick="showAnswer('a4',this)">Show Answer</button>
+<div id="a4" class="answer">
+<p><strong>Answer</strong></p>
+<p>DNA carries genetic information in living organisms.</p>
+</div>
+</div>
+
+<div class="card">
+<h3>📝 Example Question 5</h3>
+<p><strong>Question:</strong></p>
+<p>Name one producer in a food chain.</p>
+<button class="show-btn" onclick="showAnswer('a5',this)">Show Answer</button>
+<div id="a5" class="answer">
+<p><strong>Answer</strong></p>
+<p>Plants are producers because they make their own food.</p>
+</div>
+</div>
+
+</div>
+<script>
+function showAnswer(id,button){
+var answer=document.getElementById(id);
+if(answer.style.display==="block"){
+answer.style.display="none";
+button.innerHTML="Show Answer";
+}else{
+answer.style.display="block";
+button.innerHTML="Hide Answer";
+}}
+</script>
+</body>
+</html>

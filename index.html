@@ -1,63 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Study Help Hub</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
+
+
+<!-- ================= SIDEBAR ================= -->
 
 <div class="sidebar">
 
+
     <div class="logo-section">
-        <img src="Logo.png" alt="Logo" class="logo">
+
+        <img
+            src="Logo.png"
+            alt="Study Help Hub Logo"
+            class="logo"
+        >
+
         <h2>Study Help Hub</h2>
+
     </div>
 
+
     <ul>
-        <li><img src="home.png"> Home</li>
-        <li><img src="Math icon.png"> Math</li>
-        <li><img src="English icon.png"> English</li>
-        <li><img src="Science icon.png"> Science</li>
-        <li><img src="History icon.png"> History</li>
-        <li><img src="ask-for-help.png"> Ask Question</li>
-        <li><img src="My question.png"> My Questions</li>
-        <li><img src="bookmark.png"> Bookmarks</li>
-        <li><img src="settings.png"> Settings</li>
-        <li><img src="help-desk.png"> Help & Support</li>
+
+
+        <li>
+
+            <a href="index.html">
+
+                <img
+                    src="home.png"
+                    alt="Home"
+                >
+
+                <span>Home</span>
+
+            </a>
+
+        </li>
+
+
+        <li>
+
+            <a href="math.html">
+
+                <img
+                    src="Math icon.png"
+                    alt="Mathematics"
+                >
+
+                <span>Mathematics</span>
+
+            </a>
+
+        </li>
+
+
+        <li>
+
+            <a href="science.html">
+
+                <img
+                    src="Science icon.png"
+                    alt="Science"
+                >
+
+                <span>Science</span>
+
+            </a>
+
+        </li>
+
+
+        <li>
+
+            <a href="english.html">
+
+                <img
+                    src="English icon.png"
+                    alt="English"
+                >
+
+                <span>English</span>
+
+            </a>
+
+        </li>
+
+
+        <li>
+
+            <a href="history.html">
+
+                <img
+                    src="History icon.png"
+                    alt="History"
+                >
+
+                <span>History</span>
+
+            </a>
+
+        </li>
+
+
+        <li>
+
+            <a href="ask-question.html">
+
+                <img
+                    src="ask-for-help.png"
+                    alt="Ask Question"
+                >
+
+                <span>Ask Question</span>
+
+            </a>
+
+        </li>
+
+
+        <li>
+
+            <a href="my-questions.html">
+
+                <img
+                    src="My question.png"
+                    alt="My Questions"
+                >
+
+                <span>My Questions</span>
+
+            </a>
+
+        </li>
+
+
+        <li>
+
+            <a href="bookmarks.html">
+
+                <img
+                    src="bookmark.png"
+                    alt="Bookmarks"
+                >
+
+                <span>Bookmarks</span>
+
+            </a>
+
+        </li>
+
+
+        <li>
+
+            <a href="settings.html">
+
+                <img
+                    src="settings.png"
+                    alt="Settings"
+                >
+
+                <span>Settings</span>
+
+            </a>
+
+        </li>
+
+
+        <li>
+
+            <a href="help.html">
+
+                <img
+                    src="help-desk.png"
+                    alt="Help and Support"
+                >
+
+                <span>Help & Support</span>
+
+            </a>
+
+        </li>
+
+
     </ul>
 
+
 </div>
+
+
+<!-- ================= MAIN CONTENT ================= -->
 
 <div class="main-content">
 
+
+    <!-- TOP BAR -->
+
     <div class="topbar">
-        <input type="text" placeholder="Search questions...">
-        <img src="Profile icon.png" class="profile">
+
+
+        <input
+            type="text"
+            id="homeSearch"
+            placeholder="Search for a subject or topic..."
+            onkeyup="searchHome()"
+        >
+
+
+        <!-- CLICKABLE PROFILE ICON -->
+
+        <a
+            href="profile.html"
+            class="profile-link"
+        >
+
+            <img
+                src="Profile icon.png"
+                alt="Profile"
+                class="profile"
+            >
+
+        </a>
+
+
     </div>
+
+
+
+    <!-- ================= WELCOME ================= -->
+
 
     <div class="welcome-text">
-        <h1>Welcome to Study Help Hub</h1>
-        <p>Ask questions, share knowledge and learn together.</p>
+
+
+        <h1>
+            Welcome to Study Help Hub
+        </h1>
+
+
+        <p>
+
+            Study Help Hub is a free educational platform
+            designed for learners of all ages around the world.
+            Whether you are learning a new topic, revising
+            for an exam, or looking for extra practice,
+            Study Help Hub provides resources to help you
+            succeed.
+
+        </p>
+
+
+        <br>
+
+
+        <p>
+
+            Explore different subjects, practise example
+            questions, discover useful study materials,
+            and ask questions whenever you need help.
+            Our goal is to make learning simple,
+            engaging, and accessible for everyone.
+
+        </p>
+
+
     </div>
 
-    <div class="card">
-        <h3>🧮 Math Question</h3>
-        <p>How do I solve algebra equations?</p>
+
+
+    <!-- ================= MATHEMATICS ================= -->
+
+
+    <a
+        href="math.html"
+        class="card-link subject-card"
+    >
+
+
+        <div class="card">
+
+
+            <h3>
+                🧮 Mathematics
+            </h3>
+
+
+            <p>
+
+                Learn arithmetic, algebra, geometry,
+                trigonometry, statistics, probability,
+                calculus and more through easy-to-follow
+                lessons, worked examples and practice
+                questions.
+
+            </p>
+
+
+        </div>
+
+
+    </a>
+
+
+
+    <!-- ================= SCIENCE ================= -->
+
+
+    <a
+        href="science.html"
+        class="card-link subject-card"
+    >
+
+
+        <div class="card">
+
+
+            <h3>
+                🧪 Science
+            </h3>
+
+
+            <p>
+
+                Explore biology, chemistry, physics,
+                astronomy and environmental science
+                with interactive learning resources
+                and example questions.
+
+            </p>
+
+
+        </div>
+
+
+    </a>
+
+
+
+    <!-- ================= ENGLISH ================= -->
+
+
+    <a
+        href="english.html"
+        class="card-link subject-card"
+    >
+
+
+        <div class="card">
+
+
+            <h3>
+                📘 English
+            </h3>
+
+
+            <p>
+
+                Improve your grammar, vocabulary,
+                reading, writing, literature and
+                communication skills through engaging
+                lessons and activities.
+
+            </p>
+
+
+        </div>
+
+
+    </a>
+
+
+
+    <!-- ================= HISTORY ================= -->
+
+
+    <a
+        href="history.html"
+        class="card-link subject-card"
+    >
+
+
+        <div class="card">
+
+
+            <h3>
+                🏛️ History
+            </h3>
+
+
+            <p>
+
+                Discover ancient civilizations,
+                world history, important events,
+                famous leaders and historical
+                timelines from around the globe.
+
+            </p>
+
+
+        </div>
+
+
+    </a>
+
+
+
+    <!-- ================= NO RESULTS ================= -->
+
+
+    <div
+        id="noResults"
+        class="card"
+        style="display:none;"
+    >
+
+
+        <h3>
+            🔍 No Results Found
+        </h3>
+
+
+        <p>
+
+            We couldn't find a subject or topic
+            matching your search.
+
+            Try searching for Mathematics,
+            Science, English, History, Algebra,
+            Chemistry, Biology, Geometry or
+            another topic.
+
+        </p>
+
+
     </div>
 
-    <div class="card">
-        <h3>🧪 Science Question</h3>
-        <p>What is photosynthesis?</p>
-    </div>
-
-    <div class="card">
-        <h3>📘 English Question</h3>
-        <p>How do I write a good introduction?</p>
-    </div>
 
 </div>
 
+
+
+<!-- ================= SEARCH JAVASCRIPT ================= -->
+
+
+<script>
+
+
+function searchHome() {
+
+
+    var searchBox =
+        document.getElementById("homeSearch");
+
+
+    var search =
+        searchBox.value.toLowerCase().trim();
+
+
+    var cards =
+        document.querySelectorAll(".subject-card");
+
+
+    var found = false;
+
+
+
+    cards.forEach(function(card) {
+
+
+        var text =
+            card.innerText.toLowerCase();
+
+
+        if (text.includes(search)) {
+
+
+            card.style.display = "block";
+
+
+            found = true;
+
+
+        }
+
+
+        else {
+
+
+            card.style.display = "none";
+
+
+        }
+
+
+    });
+
+
+
+    var noResults =
+        document.getElementById("noResults");
+
+
+
+    if (search === "") {
+
+
+        cards.forEach(function(card) {
+
+            card.style.display = "block";
+
+        });
+
+
+        noResults.style.display = "none";
+
+
+    }
+
+
+    else if (found) {
+
+
+        noResults.style.display = "none";
+
+
+    }
+
+
+    else {
+
+
+        noResults.style.display = "block";
+
+
+    }
+
+
+}
+
+
+</script>
+
+
 </body>
+
 </html>

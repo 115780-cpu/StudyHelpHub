@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Study Help Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+    <div class="logo-section">
+        <img src="Logo.png" alt="Study Help Hub Logo" class="logo">
+        <h2>Study Help Hub</h2>
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="index.html">
+                <img src="home.png" alt="Home">
+                <span>Home</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="math.html">
+                <img src="Math icon.png" alt="Mathematics">
+                <span>Mathematics</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="science.html">
+                <img src="Science icon.png" alt="Science">
+                <span>Science</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="english.html">
+                <img src="English icon.png" alt="English">
+                <span>English</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="history.html">
+                <img src="History icon.png" alt="History">
+                <span>History</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="ask-question.html">
+                <img src="ask-for-help.png" alt="Ask Question">
+                <span>Ask Question</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="my-questions.html">
+                <img src="My question.png" alt="My Questions">
+                <span>My Questions</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="bookmarks.html">
+                <img src="bookmark.png" alt="Bookmarks">
+                <span>Bookmarks</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="settings.html">
+                <img src="settings.png" alt="Settings">
+                <span>Settings</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="help.html">
+                <img src="help-desk.png" alt="Help & Support">
+                <span>Help & Support</span>
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<!-- MAIN CONTENT -->
+
+<div class="main-content">
+
+    <!-- TOP BAR -->
+
+    <div class="topbar">
+
+        <input
+            type="text"
+            placeholder="Search settings..."
+        >
+
+        <img
+            src="Profile icon.png"
+            alt="Profile"
+            class="profile"
+        >
+
+    </div>
+
+
+    <!-- WELCOME -->
+
+    <div class="welcome-text">
+
+        <h1>⚙️ Settings</h1>
+
+        <p>
+            Manage your Study Help Hub preferences and customise
+            your learning experience.
+        </p>
+
+    </div>
+
+
+    <!-- PROFILE SETTINGS -->
+
+    <div class="card">
+
+        <h3>👤 Profile Settings</h3>
+
+        <br>
+
+        <label>
+            <strong>Display Name</strong>
+        </label>
+
+        <br><br>
+
+        <input
+            type="text"
+            id="displayName"
+            placeholder="Enter your name"
+            style="width:100%; padding:12px; border:1px solid #ccc; border-radius:8px;"
+        >
+
+        <br><br>
+
+        <button
+            class="show-btn"
+            onclick="saveName()">
+            Save Name
+        </button>
+
+        <p id="nameMessage" style="margin-top:15px;"></p>
+
+    </div>
+
+
+    <!-- LEARNING PREFERENCES -->
+
+    <div class="card">
+
+        <h3>📚 Learning Preferences</h3>
+
+        <br>
+
+        <label>
+            <strong>Favourite Subject</strong>
+        </label>
+
+        <br><br>
+
+        <select
+            id="subject"
+            style="width:100%; padding:12px; border:1px solid #ccc; border-radius:8px;"
+        >
+
+            <option>Mathematics</option>
+            <option>Science</option>
+            <option>English</option>
+            <option>History</option>
+            <option>Other</option>
+
+        </select>
+
+        <br><br>
+
+        <button
+            class="show-btn"
+            onclick="saveSubject()">
+            Save Preference
+        </button>
+
+        <p id="subjectMessage" style="margin-top:15px;"></p>
+
+    </div>
+
+
+    <!-- NOTIFICATIONS -->
+
+    <div class="card">
+
+        <h3>🔔 Notifications</h3>
+
+        <br>
+
+        <label>
+            <input
+                type="checkbox"
+                id="notifications"
+                onchange="notificationChanged()"
+            >
+
+            Receive study reminders
+        </label>
+
+        <br><br>
+
+        <label>
+            <input
+                type="checkbox"
+                id="answers"
+                onchange="notificationChanged()"
+            >
+
+            Notify me when someone answers my question
+        </label>
+
+        <p
+            id="notificationMessage"
+            style="margin-top:15px;"
+        ></p>
+
+    </div>
+
+
+    <!-- APPEARANCE -->
+
+    <div class="card">
+
+        <h3>🎨 Appearance</h3>
+
+        <br>
+
+        <label>
+            <strong>Text Size</strong>
+        </label>
+
+        <br><br>
+
+        <select
+            id="textSize"
+            onchange="changeTextSize()"
+            style="width:100%; padding:12px; border:1px solid #ccc; border-radius:8px;"
+        >
+
+            <option value="normal">Normal</option>
+            <option value="large">Large</option>
+            <option value="small">Small</option>
+
+        </select>
+
+        <br><br>
+
+        <label>
+            <input
+                type="checkbox"
+                id="highContrast"
+                onchange="toggleContrast()"
+            >
+
+            High contrast mode
+        </label>
+
+    </div>
+
+
+    <!-- PRIVACY -->
+
+    <div class="card">
+
+        <h3>🔒 Privacy</h3>
+
+        <br>
+
+        <label>
+            <input
+                type="checkbox"
+                id="publicProfile"
+                onchange="privacyChanged()"
+            >
+
+            Allow other users to see my profile
+        </label>
+
+        <p
+            id="privacyMessage"
+            style="margin-top:15px;"
+        ></p>
+
+    </div>
+
+
+    <!-- RESET -->
+
+    <div class="card">
+
+        <h3>🔄 Reset Settings</h3>
+
+        <p>
+            Reset your settings back to their default values.
+        </p>
+
+        <br>
+
+        <button
+            class="show-btn"
+            onclick="resetSettings()">
+            Reset Settings
+        </button>
+
+        <p
+            id="resetMessage"
+            style="margin-top:15px;"
+        ></p>
+
+    </div>
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+function saveName() {
+
+    var name = document.getElementById("displayName").value;
+
+    if (name.trim() === "") {
+
+        document.getElementById("nameMessage").innerHTML =
+            "Please enter a name.";
+
+    } else {
+
+        localStorage.setItem("studyName", name);
+
+        document.getElementById("nameMessage").innerHTML =
+            "✅ Name saved successfully.";
+
+    }
+
+}
+
+
+function saveSubject() {
+
+    var subject = document.getElementById("subject").value;
+
+    localStorage.setItem("studySubject", subject);
+
+    document.getElementById("subjectMessage").innerHTML =
+        "✅ Favourite subject saved.";
+
+}
+
+
+function notificationChanged() {
+
+    var studyReminders =
+        document.getElementById("notifications").checked;
+
+    var answers =
+        document.getElementById("answers").checked;
+
+    localStorage.setItem("studyReminders", studyReminders);
+
+    localStorage.setItem("answerNotifications", answers);
+
+    document.getElementById("notificationMessage").innerHTML =
+        "✅ Notification settings updated.";
+
+}
+
+
+function changeTextSize() {
+
+    var size =
+        document.getElementById("textSize").value;
+
+    document.body.classList.remove(
+        "large-text",
+        "small-text"
+    );
+
+    if (size === "large") {
+
+        document.body.classList.add("large-text");
+
+    }
+
+    if (size === "small") {
+
+        document.body.classList.add("small-text");
+
+    }
+
+    localStorage.setItem("textSize", size);
+
+}
+
+
+function toggleContrast() {
+
+    var enabled =
+        document.getElementById("highContrast").checked;
+
+    if (enabled) {
+
+        document.body.style.filter =
+            "contrast(1.2)";
+
+    } else {
+
+        document.body.style.filter =
+            "none";
+
+    }
+
+    localStorage.setItem("highContrast", enabled);
+
+}
+
+
+function privacyChanged() {
+
+    var enabled =
+        document.getElementById("publicProfile").checked;
+
+    localStorage.setItem("publicProfile", enabled);
+
+    document.getElementById("privacyMessage").innerHTML =
+        "✅ Privacy setting updated.";
+
+}
+
+
+function resetSettings() {
+
+    localStorage.clear();
+
+    document.getElementById("displayName").value = "";
+
+    document.getElementById("subject").value = "Mathematics";
+
+    document.getElementById("notifications").checked = false;
+
+    document.getElementById("answers").checked = false;
+
+    document.getElementById("publicProfile").checked = false;
+
+    document.getElementById("textSize").value = "normal";
+
+    document.getElementById("highContrast").checked = false;
+
+    document.body.classList.remove(
+        "large-text",
+        "small-text"
+    );
+
+    document.body.style.filter = "none";
+
+    document.getElementById("resetMessage").innerHTML =
+        "✅ Settings have been reset.";
+
+}
+
+
+window.onload = function() {
+
+    var savedName =
+        localStorage.getItem("studyName");
+
+    if (savedName) {
+
+        document.getElementById("displayName").value =
+            savedName;
+
+    }
+
+
+    var savedSubject =
+        localStorage.getItem("studySubject");
+
+    if (savedSubject) {
+
+        document.getElementById("subject").value =
+            savedSubject;
+
+    }
+
+};
+
+</script>
+
+</body>
+</html>

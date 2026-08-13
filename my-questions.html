@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Questions | Study Help Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+    <div class="logo-section">
+        <img src="Logo.png" alt="Study Help Hub Logo" class="logo">
+        <h2>Study Help Hub</h2>
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="index.html">
+                <img src="home.png" alt="Home">
+                <span>Home</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="math.html">
+                <img src="Math icon.png" alt="Mathematics">
+                <span>Mathematics</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="science.html">
+                <img src="Science icon.png" alt="Science">
+                <span>Science</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="english.html">
+                <img src="English icon.png" alt="English">
+                <span>English</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="history.html">
+                <img src="History icon.png" alt="History">
+                <span>History</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="ask-question.html">
+                <img src="ask-for-help.png" alt="Ask Question">
+                <span>Ask Question</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="my-questions.html">
+                <img src="My question.png" alt="My Questions">
+                <span>My Questions</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="bookmarks.html">
+                <img src="bookmark.png" alt="Bookmarks">
+                <span>Bookmarks</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="settings.html">
+                <img src="settings.png" alt="Settings">
+                <span>Settings</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="help.html">
+                <img src="help-desk.png" alt="Help & Support">
+                <span>Help & Support</span>
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<!-- MAIN CONTENT -->
+
+<div class="main-content">
+
+    <!-- TOP BAR -->
+
+    <div class="topbar">
+
+        <input
+            type="text"
+            placeholder="Search my questions..."
+        >
+
+        <img
+            src="Profile icon.png"
+            alt="Profile"
+            class="profile"
+        >
+
+    </div>
+
+
+    <!-- WELCOME -->
+
+    <div class="welcome-text">
+
+        <h1>📂 My Questions</h1>
+
+        <p>
+            View the questions you have asked and keep track of
+            the help and answers you have received.
+        </p>
+
+    </div>
+
+
+    <!-- QUESTION 1 -->
+
+    <div class="card">
+
+        <h3>🧮 How do I solve this algebra equation?</h3>
+
+        <p>
+            <strong>Subject:</strong> Mathematics
+        </p>
+
+        <p>
+            <strong>Topic:</strong> Algebra
+        </p>
+
+        <p>
+            <strong>Question:</strong>
+            How do I solve 3x + 7 = 22?
+        </p>
+
+        <p>
+            <strong>Status:</strong>
+            ✅ Answered
+        </p>
+
+        <button
+            class="show-btn"
+            onclick="showAnswer('answer1', this)">
+            View Answer
+        </button>
+
+        <div id="answer1" class="answer">
+
+            <p>
+                First subtract 7 from both sides:
+            </p>
+
+            <p>
+                3x = 15
+            </p>
+
+            <p>
+                Then divide both sides by 3:
+            </p>
+
+            <p>
+                <strong>x = 5</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- QUESTION 2 -->
+
+    <div class="card">
+
+        <h3>🧪 What is the difference between an element and a compound?</h3>
+
+        <p>
+            <strong>Subject:</strong> Science
+        </p>
+
+        <p>
+            <strong>Topic:</strong> Chemistry
+        </p>
+
+        <p>
+            <strong>Question:</strong>
+            What makes an element different from a compound?
+        </p>
+
+        <p>
+            <strong>Status:</strong>
+            ⏳ Waiting for an answer
+        </p>
+
+        <button
+            class="show-btn"
+            onclick="showAnswer('answer2', this)">
+            View Question
+        </button>
+
+        <div id="answer2" class="answer">
+
+            <p>
+                Your question has been submitted and is waiting
+                for a response.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- QUESTION 3 -->
+
+    <div class="card">
+
+        <h3>📖 How do I identify a metaphor?</h3>
+
+        <p>
+            <strong>Subject:</strong>
+            English
+        </p>
+
+        <p>
+            <strong>Topic:</strong>
+            Literary Devices
+        </p>
+
+        <p>
+            <strong>Question:</strong>
+            How can I tell if a sentence contains a metaphor?
+        </p>
+
+        <p>
+            <strong>Status:</strong>
+            ⏳ Waiting for an answer
+        </p>
+
+        <button
+            class="show-btn"
+            onclick="showAnswer('answer3', this)">
+            View Question
+        </button>
+
+        <div id="answer3" class="answer">
+
+            <p>
+                Your question has been submitted and is waiting
+                for a response.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- EMPTY STATE / INFO -->
+
+    <div class="card">
+
+        <h3>💡 Keep Learning</h3>
+
+        <p>
+            Ask questions whenever you get stuck. Reviewing
+            previous questions and answers can also help you
+            understand topics more clearly.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+function showAnswer(id, button) {
+
+    var answer = document.getElementById(id);
+
+    if (answer.style.display === "block") {
+
+        answer.style.display = "none";
+
+        button.innerHTML = "View Answer";
+
+    } else {
+
+        answer.style.display = "block";
+
+        button.innerHTML = "Hide Answer";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
