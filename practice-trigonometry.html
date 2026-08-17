@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trigonometry Practice | Study Help Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+    <div class="logo-section">
+
+        <img src="Logo.png" alt="Study Help Hub Logo" class="logo">
+
+        <h2>Study Help Hub</h2>
+
+    </div>
+
+
+    <ul>
+
+        <li>
+            <a href="index.html">
+                <img src="home.png" alt="Home">
+                <span>Home</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="math.html">
+                <img src="Math icon.png" alt="Mathematics">
+                <span>Mathematics</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="science.html">
+                <img src="Science icon.png" alt="Science">
+                <span>Science</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="english.html">
+                <img src="English icon.png" alt="English">
+                <span>English</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="history.html">
+                <img src="History icon.png" alt="History">
+                <span>History</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="ask-question.html">
+                <img src="ask-for-help.png" alt="Ask Question">
+                <span>Ask Question</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="my-questions.html">
+                <img src="My question.png" alt="My Questions">
+                <span>My Questions</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="bookmarks.html">
+                <img src="bookmark.png" alt="Bookmarks">
+                <span>Bookmarks</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="settings.html">
+                <img src="settings.png" alt="Settings">
+                <span>Settings</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="help.html">
+                <img src="help-desk.png" alt="Help">
+                <span>Help & Support</span>
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<!-- Main Content -->
+
+<div class="main-content">
+
+
+    <!-- Top Bar -->
+
+    <div class="topbar">
+
+        <input
+            type="text"
+            placeholder="Search Trigonometry Practice..."
+        >
+
+        <a href="profile.html">
+
+            <img
+                src="Profile icon.png"
+                alt="Profile"
+                class="profile"
+            >
+
+        </a>
+
+    </div>
+
+
+    <!-- Welcome -->
+
+    <div class="welcome-text">
+
+        <h1>📏 Trigonometry Practice</h1>
+
+        <p>
+            Practise your trigonometry skills using the questions
+            below. Try to solve each problem yourself before
+            clicking "Show Answer".
+        </p>
+
+    </div>
+
+
+    <!-- Study Tip -->
+
+    <div class="card">
+
+        <h3>💡 Study Tip</h3>
+
+        <p>
+            Remember the mnemonic <strong>SOH CAH TOA</strong>
+            to choose the correct trigonometric ratio. Always
+            identify the opposite, adjacent, and hypotenuse before
+            solving a problem.
+        </p>
+
+    </div>
+
+
+    <!-- Question 1 -->
+
+    <div class="card">
+
+        <h3>📝 Practice Question 1</h3>
+
+        <p><strong>Find the missing side.</strong></p>
+
+        <p>
+            A right-angled triangle has an angle of 30°
+            and a hypotenuse of 10 cm. Find the length of
+            the opposite side.
+        </p>
+
+
+        <button
+            class="show-btn"
+            onclick="showAnswer('answer1', this)"
+        >
+            Show Answer
+        </button>
+
+
+        <div id="answer1" class="answer">
+
+            <p><strong>Working:</strong></p>
+
+            <p>
+                sin(30°) = opposite ÷ hypotenuse
+            </p>
+
+            <p>
+                0.5 = opposite ÷ 10
+            </p>
+
+            <p>
+                opposite = 5 cm
+            </p>
+
+            <p>
+                <strong>Answer: 5 cm</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Question 2 -->
+
+    <div class="card">
+
+        <h3>📝 Practice Question 2</h3>
+
+        <p><strong>Find the missing side.</strong></p>
+
+        <p>
+            A right-angled triangle has an angle of 60°
+            and an adjacent side of 8 cm. Find the
+            hypotenuse.
+        </p>
+
+
+        <button
+            class="show-btn"
+            onclick="showAnswer('answer2', this)"
+        >
+            Show Answer
+        </button>
+
+
+        <div id="answer2" class="answer">
+
+            <p><strong>Working:</strong></p>
+
+            <p>
+                cos(60°) = adjacent ÷ hypotenuse
+            </p>
+
+            <p>
+                0.5 = 8 ÷ hypotenuse
+            </p>
+
+            <p>
+                hypotenuse = 16 cm
+            </p>
+
+            <p>
+                <strong>Answer: 16 cm</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Question 3 -->
+
+    <div class="card">
+
+        <h3>📝 Practice Question 3</h3>
+
+        <p><strong>Find the missing side.</strong></p>
+
+        <p>
+            A right-angled triangle has an angle of 45°
+            and an adjacent side of 10 cm. Find the
+            opposite side.
+        </p>
+
+
+        <button
+            class="show-btn"
+            onclick="showAnswer('answer3', this)"
+        >
+            Show Answer
+        </button>
+
+
+        <div id="answer3" class="answer">
+
+            <p><strong>Working:</strong></p>
+
+            <p>
+                tan(45°) = opposite ÷ adjacent
+            </p>
+
+            <p>
+                1 = opposite ÷ 10
+            </p>
+
+            <p>
+                opposite = 10 cm
+            </p>
+
+            <p>
+                <strong>Answer: 10 cm</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Question 4 -->
+
+    <div class="card">
+
+        <h3>📝 Practice Question 4</h3>
+
+        <p><strong>Find the missing angle.</strong></p>
+
+        <p>
+            In a right-angled triangle, the opposite side
+            is 6 cm and the hypotenuse is 12 cm.
+            Find the angle.
+        </p>
+
+
+        <button
+            class="show-btn"
+            onclick="showAnswer('answer4', this)"
+        >
+            Show Answer
+        </button>
+
+
+        <div id="answer4" class="answer">
+
+            <p><strong>Working:</strong></p>
+
+            <p>
+                sin(θ) = opposite ÷ hypotenuse
+            </p>
+
+            <p>
+                sin(θ) = 6 ÷ 12
+            </p>
+
+            <p>
+                sin(θ) = 0.5
+            </p>
+
+            <p>
+                θ = 30°
+            </p>
+
+            <p>
+                <strong>Answer: 30°</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Question 5 -->
+
+    <div class="card">
+
+        <h3>📝 Practice Question 5</h3>
+
+        <p><strong>Find the missing angle.</strong></p>
+
+        <p>
+            A right-angled triangle has an opposite side
+            of 5 cm and an adjacent side of 5 cm.
+            Find the angle.
+        </p>
+
+
+        <button
+            class="show-btn"
+            onclick="showAnswer('answer5', this)"
+        >
+            Show Answer
+        </button>
+
+
+        <div id="answer5" class="answer">
+
+            <p><strong>Working:</strong></p>
+
+            <p>
+                tan(θ) = opposite ÷ adjacent
+            </p>
+
+            <p>
+                tan(θ) = 5 ÷ 5
+            </p>
+
+            <p>
+                tan(θ) = 1
+            </p>
+
+            <p>
+                θ = 45°
+            </p>
+
+            <p>
+                <strong>Answer: 45°</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Question 6 -->
+
+    <div class="card">
+
+        <h3>📝 Practice Question 6</h3>
+
+        <p><strong>Find the missing side.</strong></p>
+
+        <p>
+            A right-angled triangle has a hypotenuse of
+            10 cm and an angle of 60°. Find the adjacent side.
+        </p>
+
+
+        <button
+            class="show-btn"
+            onclick="showAnswer('answer6', this)"
+        >
+            Show Answer
+        </button>
+
+
+        <div id="answer6" class="answer">
+
+            <p><strong>Working:</strong></p>
+
+            <p>
+                cos(60°) = adjacent ÷ hypotenuse
+            </p>
+
+            <p>
+                0.5 = adjacent ÷ 10
+            </p>
+
+            <p>
+                adjacent = 5 cm
+            </p>
+
+            <p>
+                <strong>Answer: 5 cm</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<!-- JavaScript -->
+
+<script>
+
+function showAnswer(id, button) {
+
+    var answer = document.getElementById(id);
+
+    if (answer.style.display === "block") {
+
+        answer.style.display = "none";
+
+        button.innerHTML = "Show Answer";
+
+    }
+
+    else {
+
+        answer.style.display = "block";
+
+        button.innerHTML = "Hide Answer";
+
+    }
+
+}
+
+</script>
+
+
+</body>
+
+</html>

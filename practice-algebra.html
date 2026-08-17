@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Algebra Practice | Study Help Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+    <div class="logo-section">
+
+        <img src="Logo.png" alt="Study Help Hub Logo" class="logo">
+
+        <h2>Study Help Hub</h2>
+
+    </div>
+
+
+    <ul>
+
+        <li>
+            <a href="index.html">
+                <img src="home.png" alt="Home">
+                <span>Home</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="math.html">
+                <img src="Math icon.png" alt="Mathematics">
+                <span>Mathematics</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="science.html">
+                <img src="Science icon.png" alt="Science">
+                <span>Science</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="english.html">
+                <img src="English icon.png" alt="English">
+                <span>English</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="history.html">
+                <img src="History icon.png" alt="History">
+                <span>History</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="ask-question.html">
+                <img src="ask-for-help.png" alt="Ask Question">
+                <span>Ask Question</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="my-questions.html">
+                <img src="My question.png" alt="My Questions">
+                <span>My Questions</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="bookmarks.html">
+                <img src="bookmark.png" alt="Bookmarks">
+                <span>Bookmarks</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="settings.html">
+                <img src="settings.png" alt="Settings">
+                <span>Settings</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="help.html">
+                <img src="help-desk.png" alt="Help">
+                <span>Help & Support</span>
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<!-- Main Content -->
+
+<div class="main-content">
+
+
+    <!-- Top Bar -->
+
+    <div class="topbar">
+
+        <input
+            type="text"
+            placeholder="Search Algebra Practice..."
+        >
+
+        <a href="profile.html">
+
+            <img
+                src="Profile icon.png"
+                alt="Profile"
+                class="profile"
+            >
+
+        </a>
+
+    </div>
+
+
+    <!-- Welcome -->
+
+    <div class="welcome-text">
+
+        <h1>➕ Algebra Practice</h1>
+
+        <p>
+            Practise your algebra skills by solving the questions
+            below. Try each question yourself before clicking
+            "Show Answer" to check your work.
+        </p>
+
+    </div>
+
+
+    <!-- Study Tip -->
+
+    <div class="card">
+
+        <h3>💡 Study Tip</h3>
+
+        <p>
+            Always show your working when solving algebra problems.
+            Work through each step carefully and check your answer
+            by substituting your value back into the original equation.
+        </p>
+
+    </div>
+
+
+    <!-- Question 1 -->
+
+    <div class="card">
+
+        <h3>📝 Practice Question 1</h3>
+
+        <p><strong>Solve:</strong></p>
+
+        <h2>3x + 7 = 22</h2>
+
+
+        <button
+            class="show-btn"
+            onclick="showAnswer('answer1', this)"
+        >
+            Show Answer
+        </button>
+
+
+        <div id="answer1" class="answer">
+
+            <p><strong>Working:</strong></p>
+
+            <p>3x + 7 = 22</p>
+
+            <p>3x = 22 − 7</p>
+
+            <p>3x = 15</p>
+
+            <p>x = 5</p>
+
+            <p><strong>Answer: x = 5</strong></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Question 2 -->
+
+    <div class="card">
+
+        <h3>📝 Practice Question 2</h3>
+
+        <p><strong>Simplify:</strong></p>
+
+        <h2>5a + 3a − 4</h2>
+
+
+        <button
+            class="show-btn"
+            onclick="showAnswer('answer2', this)"
+        >
+            Show Answer
+        </button>
+
+
+        <div id="answer2" class="answer">
+
+            <p><strong>Working:</strong></p>
+
+            <p>5a + 3a − 4</p>
+
+            <p>8a − 4</p>
+
+            <p><strong>Answer: 8a − 4</strong></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Question 3 -->
+
+    <div class="card">
+
+        <h3>📝 Practice Question 3</h3>
+
+        <p><strong>Expand:</strong></p>
+
+        <h2>3(x + 4)</h2>
+
+
+        <button
+            class="show-btn"
+            onclick="showAnswer('answer3', this)"
+        >
+            Show Answer
+        </button>
+
+
+        <div id="answer3" class="answer">
+
+            <p><strong>Working:</strong></p>
+
+            <p>3(x + 4)</p>
+
+            <p>= 3x + 12</p>
+
+            <p><strong>Answer: 3x + 12</strong></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Question 4 -->
+
+    <div class="card">
+
+        <h3>📝 Practice Question 4</h3>
+
+        <p><strong>Factorise:</strong></p>
+
+        <h2>x² + 7x + 12</h2>
+
+
+        <button
+            class="show-btn"
+            onclick="showAnswer('answer4', this)"
+        >
+            Show Answer
+        </button>
+
+
+        <div id="answer4" class="answer">
+
+            <p><strong>Working:</strong></p>
+
+            <p>
+                We need two numbers that multiply to 12
+                and add to 7.
+            </p>
+
+            <p>3 × 4 = 12</p>
+
+            <p>3 + 4 = 7</p>
+
+            <p>(x + 3)(x + 4)</p>
+
+            <p>
+                <strong>Answer: (x + 3)(x + 4)</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Question 5 -->
+
+    <div class="card">
+
+        <h3>📝 Practice Question 5</h3>
+
+        <p><strong>Solve:</strong></p>
+
+        <h2>5y − 10 = 40</h2>
+
+
+        <button
+            class="show-btn"
+            onclick="showAnswer('answer5', this)"
+        >
+            Show Answer
+        </button>
+
+
+        <div id="answer5" class="answer">
+
+            <p><strong>Working:</strong></p>
+
+            <p>5y − 10 = 40</p>
+
+            <p>5y = 50</p>
+
+            <p>y = 10</p>
+
+            <p><strong>Answer: y = 10</strong></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Question 6 -->
+
+    <div class="card">
+
+        <h3>📝 Practice Question 6</h3>
+
+        <p><strong>Simplify:</strong></p>
+
+        <h2>4x + 2x − 3 + 5</h2>
+
+
+        <button
+            class="show-btn"
+            onclick="showAnswer('answer6', this)"
+        >
+            Show Answer
+        </button>
+
+
+        <div id="answer6" class="answer">
+
+            <p><strong>Working:</strong></p>
+
+            <p>4x + 2x − 3 + 5</p>
+
+            <p>6x + 2</p>
+
+            <p><strong>Answer: 6x + 2</strong></p>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<!-- JavaScript -->
+
+<script>
+
+function showAnswer(id, button) {
+
+    var answer = document.getElementById(id);
+
+    if (answer.style.display === "block") {
+
+        answer.style.display = "none";
+
+        button.innerHTML = "Show Answer";
+
+    }
+
+    else {
+
+        answer.style.display = "block";
+
+        button.innerHTML = "Hide Answer";
+
+    }
+
+}
+
+</script>
+
+
+</body>
+
+</html>
